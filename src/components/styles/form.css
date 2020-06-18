@@ -1,0 +1,27 @@
+.text {
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.honk {
+    grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+    .input > textarea {
+        resize: vertical;
+        border: 1px solid #b4b4b4;
+        border-radius: 4px;
+        height: 10rem;
+        width: 100%;
+    }
+
+@media screen and (max-width: 768px) {
+    .honk {
+        grid-row: 5 / 5;
+    }
+    .text, .honk {
+        text-align: center;
+        grid-column: 2 / 2;
+        justify-self: stretch;
+    }     
+}

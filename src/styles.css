@@ -1,0 +1,31 @@
+
+
+*, *::before, *::after {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+    background:  rgb(255,255,255);
+    background-repeat: repeat-y;
+    overflow: scroll;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 14px;
+        height: auto;
+    }
+}

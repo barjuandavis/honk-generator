@@ -1,0 +1,20 @@
+.header nav > button {
+    padding: 0.5rem 1rem;
+    background: none;
+    color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    transition-property: background, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.header nav > button:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    
+
+}

@@ -1,0 +1,65 @@
+/* Header stuffs */
+.header {
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    position: fixed;
+    grid-template-columns: 0.5fr auto 2fr 0.5fr;
+    place-items: center center;
+    grid-row: auto;
+    background-color: #202020;
+    color: #ffffff;
+    transition: height 350ms ease-in;
+}
+.header__logo {
+    grid-column: 2 / 2;
+}
+
+.header__nav {
+    display: flex;
+    place-self: center end;
+    grid-column: 3 / 3;
+}
+
+.header__projects {
+    margin-right: 0.1rem;
+}
+
+.header--toggle {
+    height: 15vh;
+    grid-template-rows: auto auto;
+}
+
+.header__nav--toggle {
+    place-self: center;
+    grid-column: 2 / span 2;
+    grid-row: 2 / 2;
+}
+
+.header__nav.header__nav--toggle > button {
+    display: block;
+    transition: opacity 350ms ease-in;
+    border: 0;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: stretch;
+        justify-content: center;
+    }
+
+    .header__nav > button {
+        transition: opacity 350ms ease-in;
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+

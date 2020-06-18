@@ -1,0 +1,103 @@
+@keyframes keyframe_top {
+    0% {margin-bottom: 7px;}
+    70% {margin-bottom: 0px;}
+    100% {transform: rotate(45deg) translate3d(0,0px,0) scaleX(1.14);}
+}
+
+@keyframes keyframe_bot {
+    0% {margin-top: 7px;}
+    70% {margin-top: 0px;}
+    100% {transform: rotate(-45deg) translate3d(8px,-7.2px,0) scaleX(1.14);}
+}
+
+@keyframes keyframe_mid {
+    0% {opacity: 1;}
+    70% {opacity: 0;}
+}
+
+.header__nav-toggle-label {
+    grid-column: 4 / 4;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.header__nav-toggle-label span {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 1.7rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label__top {
+    margin-bottom: 7px;
+}
+
+.nav-toggle-label__top--toggle {
+    animation-name: keyframe_top;
+    -webkit-animation-name: keyframe_top;
+    -moz-animation-name: keyframe_top;
+    -o-animation-name: keyframe_top;
+    margin-bottom: 0px;
+    transform: rotate(45deg) translate3d(0,0px,0) scaleX(1.14);
+}
+
+.nav-toggle-label__bot {
+    margin-top: 7px;
+}
+
+.nav-toggle-label__bot--toggle {
+    animation-name: keyframe_bot;
+    -webkit-animation-name: keyframe_bot;
+    -moz-animation-name: keyframe_bot;
+    -o-animation-name: keyframe_bot;
+    margin-top: 7px;
+    transform: rotate(-45deg) translate3d(8px,-7.2px,0) scaleX(1.14);
+}
+
+.nav-toggle-label__mid {
+    opacity: 1;
+   
+}
+
+.nav-toggle-label__mid--toggle {
+    animation-name: keyframe_mid;
+    -webkit-animation-name: keyframe_mid;
+    -moz-animation-name: keyframe_mid;
+    -o-animation-name: keyframe_mid;
+    opacity: 0;
+}
+
+
+.nav-toggle-label__top,
+.nav-toggle-label__mid,
+.nav-toggle-label__bot {
+    animation-duration: 350ms;
+    -webkit-animation-duration: 350ms;
+    -moz-animation-duration: 350ms;
+    -o-animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.nav-toggle-label__top--toggle,
+.nav-toggle-label__bot--toggle,
+.nav-toggle-label__mid--toggle {
+    animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+
+@media screen and (max-width: 768px) {
+ 
+    .header__nav-toggle-label {
+        display: inline-flex;
+    }
+
+
+}
