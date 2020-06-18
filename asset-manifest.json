@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/honk-generator/static/css/main.b3b44f6a.chunk.css",
+    "main.js": "/honk-generator/static/js/main.d9b35416.chunk.js",
+    "main.js.map": "/honk-generator/static/js/main.d9b35416.chunk.js.map",
+    "runtime-main.js": "/honk-generator/static/js/runtime-main.2de13ac7.js",
+    "runtime-main.js.map": "/honk-generator/static/js/runtime-main.2de13ac7.js.map",
+    "static/js/2.ba7a562d.chunk.js": "/honk-generator/static/js/2.ba7a562d.chunk.js",
+    "static/js/2.ba7a562d.chunk.js.map": "/honk-generator/static/js/2.ba7a562d.chunk.js.map",
+    "index.html": "/honk-generator/index.html",
+    "precache-manifest.48e6824d1fcfcecff52f72eed60aecf0.js": "/honk-generator/precache-manifest.48e6824d1fcfcecff52f72eed60aecf0.js",
+    "service-worker.js": "/honk-generator/service-worker.js",
+    "static/css/main.b3b44f6a.chunk.css.map": "/honk-generator/static/css/main.b3b44f6a.chunk.css.map",
+    "static/js/2.ba7a562d.chunk.js.LICENSE.txt": "/honk-generator/static/js/2.ba7a562d.chunk.js.LICENSE.txt",
+    "static/media/geese.svg": "/honk-generator/static/media/geese.dda10c96.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2de13ac7.js",
+    "static/js/2.ba7a562d.chunk.js",
+    "static/css/main.b3b44f6a.chunk.css",
+    "static/js/main.d9b35416.chunk.js"
+  ]
+}
