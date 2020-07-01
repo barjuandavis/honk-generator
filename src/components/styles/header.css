@@ -1,6 +1,6 @@
 /* Header stuffs */
 .header {
-    height: 10vh;
+    height: 64px;
     width: 100%;
     display: grid;
     position: fixed;
@@ -10,6 +10,7 @@
     background-color: #202020;
     color: #ffffff;
     transition: height 350ms ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .header__logo {
     grid-column: 2 / 2;
@@ -26,7 +27,7 @@
 }
 
 .header--toggle {
-    height: 15vh;
+    height: 150px;
     grid-template-rows: auto auto;
 }
 

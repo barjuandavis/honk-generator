@@ -5,8 +5,9 @@
     border: 1px solid #c0c0c0;
     border-radius: 4px;
     transition-property: background, color;
-    transition-duration: 250ms;
+    transition-duration: 150ms;
     transition-timing-function: ease-in-out;
+    cursor: pointer;
 }
 
 .header nav > button:hover {

@@ -1,0 +1,16 @@
+.notification {
+    position: fixed;
+    bottom: -10vh;
+    text-align: left;
+    width: 100%;
+    background: #202020;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: bottom 250ms ease-out;
+}
+
+.notification--enabled {
+    display: block;
+    bottom: 0vh;
+}

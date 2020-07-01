@@ -15,6 +15,27 @@
         width: 100%;
     }
 
+.input > div {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-between;
+     width: 100%;
+}
+
+.input > div > button {
+    border: none;
+    background: none;
+    text-decoration-line: underline;
+    font-size: 1rem;
+    color: #747474;
+    cursor: pointer;
+    transition: color 250ms;
+}
+.input > div > button:hover {
+    color: black;
+
+}
+
 @media screen and (max-width: 768px) {
     .honk {
         grid-row: 5 / 5;

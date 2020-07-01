@@ -1,6 +1,7 @@
 import React from 'react'
 import Morsify from 'morsify'
 import './styles/form.css'
+import Notification from './Notification'
 
 
 
@@ -65,24 +66,49 @@ export default function Form({state, setState, ...restProps}) {
         }
     }
 
+    const copyToClipboard = (e) => {
+        const {name} = e.target
+        const textArea = document.querySelector(`#${name}`);
+        navigator.clipboard.writeText(textArea.innerHTML).then(() => {
+            setState({...state, notify: true, what: name })
+            textArea.select()
+            setTimeout(() => {
+                setState({...state, notify: false, what: name })
+            }, 1500)
+        }, () => {
+            console.log("Copy fail :(")
+        })
+    }
+
     return (
         <>
             <div className="input text">
-                <h2>Texts</h2>
+                <div>
+                    <h2>Texts</h2>
+                    <button className="copy" 
+                    name="text" onClick={(e) => copyToClipboard(e)}>Copy to Clipboard</button>
+                </div>
                 <textarea
+                    id="text"
                     name="text"
                     placeholder = "Put yout plain text here."
                     value={state["text"]}
-                    onChange={(e) => handleChange(e)} />
+                    onChange={(e) => handleChange(e)}></textarea>
             </div>
             <div className="input honk">
-                <h2>Honks</h2>
+                <div>
+                    <h2>Honks</h2>
+                    <button className="copy" 
+                    name="honk" onClick={(e) => copyToClipboard(e)}>Copy to Clipboard</button>
+                </div>
                 <textarea
+                    id="honk"
                     name="honk"
                     placeholder="honkhonkhonkhonk hoonkhoonkhoonk hoonkhonk hoonkhonkhoonk"
                     value={state["honk"]}
-                    onChange={(e) => handleChange(e)} />
+                    onChange={(e) => handleChange(e)}></textarea>
             </div>
+            <Notification what={state.what} className={state.notify ? "notification notification--enabled": "notification"} />
            
         </>
     )
