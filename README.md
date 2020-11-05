@@ -15,7 +15,7 @@ It simply uses <a href="https://github.com/ozdemirburak/morsify">Morsify</a> to 
 
 ## How to Use
 
-Visit <a href="barjuandavis.github.io/honk-generator">honk-generator</a> Github Page site to use!
+Visit <a href="https://barjuandavis.github.io/honk-generator">honk-generator</a> Github Page site to use!
 
 ## Contribute!
 
